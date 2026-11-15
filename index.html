@@ -110,13 +110,30 @@
       <h2>Final scientific report — Four Hospitals</h2>
       <p class="sub">The study statistics are complete. Students must add only their scientific conclusion and supporting graph.</p>
 
-      <div class="report-placeholder">
-        <!-- STUDENTS: Replace the paragraphs below with your own scientific conclusion. -->
-        <h3>Final conclusion — STUDENT WORK</h3>
-        <p><strong>Research team note:</strong> Identify the most important result that changes how the initial study findings should be interpreted. Explain what you first observed, what the additional comparison revealed, and why your conclusion changed.</p>
-        <p>Write your own short, evidence-based conclusion here, using the results of the four-hospital NOVIRA-26 study. State one important limitation of the findings.</p>
-        <p><strong>Replace this entire message with your final report before publication.</strong></p>
-      </div>
+     <div class="report-placeholder">
+  <h3>Scientific interpretation</h3>
+
+  <p>
+    The overall analysis revealed a higher hospitalisation rate in the AVX-7 group compared with the Standard care group (30.9% vs 15.7%) still this observed difference should be interpreted with caution as the groups had major baseline clinical differences.
+  </p>
+
+  <p>
+    In addition patients in the AVX-7 group tended to be older had a higher prevalence of comorbidities lower oxygen saturation SpO₂ higher CRP levels and a much greater proportion of high risk patients(47.3% vs 3.1%) mean SpO₂ and CRP values were calculated using available measurements only because some data were missing therefore these means do not represent the entire patient cohort.
+  </p>
+
+  <p>
+    When the groups were stratified according to baseline risk the AVX-7 treatment group showed consistently lower hospitalization rates in all three categories: low risk (2.6% vs 9.1%) moderate risk (16.5% vs. 29.1%), and high risk (51.3% vs. 68.6%) this reversal in direction between the overall comparison and the stratified results displays a pattern consistent with Simpson's paradox highlighting the potential influence of confounding factors and baseline disease severity.
+  </p>
+
+  <p>
+    However stratification by baseline risk does not necessarily eliminate all confounding, as variables such as age comorbidities SpO₂ levels and CRP may still contribute to residual confounding overall these findings demonstrate how relying solely on crude hospitalization rates may provide a misleading picture when baseline characteristics are not adequately considered.
+  </p>
+
+  <p>
+    The risk stratified data indicate an observed association between receipt of AVX-7 and lower hospitalization rates within each risk category but this does not establish causality given the limitations inherent in observational study designs further multivariable statistical analyses and randomized controlled trials RCTs are needed to better characterize this association a dedicated evaluation of adverse events and safety endpoints is also required to assess the safety profile of AVX-7.
+  </p>
+</div>
+
 
       <figure class="final-graph">
         <!-- STUDENTS: Replace the graph-placeholder div with a figure representing your key finding.
@@ -124,10 +141,254 @@
              Insert your graph directly in this HTML file (for example, with an inline SVG chart),
              so that all project content remains in the four provided files.
              Do not use AI to write or interpret your scientific conclusion. -->
-        <div class="graph-placeholder">
-          <strong>INSERT YOUR SCIENTIFIC GRAPH HERE</strong>
-          <span>Insert a graph showing the key result discussed in your final conclusion. Replace this placeholder with the graph before publication.</span>
-        </div>
+
+<figure class="final-graph" aria-labelledby="novira-figure-caption">
+
+<style>
+.final-graph {
+  width: 100%;
+  margin: 28px auto;
+  padding: 24px 18px;
+  background: #ffffff;
+  border: 1px solid #dce3e8;
+  border-radius: 8px;
+  color: #243447;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.final-graph svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.final-graph .panel-title {
+  font-size: 19px;
+  font-weight: 700;
+  fill: #203447;
+}
+
+.final-graph .panel-subtitle {
+  font-size: 12px;
+  fill: #64748b;
+}
+
+.final-graph .axis-label {
+  font-size: 12px;
+  fill: #526273;
+}
+
+.final-graph .category-label {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #334155;
+}
+
+.final-graph .value-label {
+  font-size: 13px;
+  font-weight: 700;
+  fill: #263746;
+}
+
+.final-graph .grid-line {
+  stroke: #e6ebef;
+  stroke-width: 1;
+}
+
+.final-graph .axis-line {
+  stroke: #8795a3;
+  stroke-width: 1.2;
+}
+
+.final-graph .avx {
+  fill: #176B87;
+}
+
+.final-graph .standard {
+  fill: #D28B45;
+}
+
+.final-graph .connector {
+  stroke: #aab6c1;
+  stroke-width: 2;
+}
+
+.final-graph figcaption {
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid #e2e8ee;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.65;
+}
+</style>
+
+<svg viewBox="0 0 1000 650"
+     role="img"
+     aria-labelledby="novira-title novira-description">
+
+<title id="novira-title">
+Hospitalization rates according to treatment group and baseline risk
+</title>
+
+<desc id="novira-description">
+Panel A compares overall hospitalization rates:
+30.9 percent in the AVX-7 group and 15.7 percent in the Standard care group.
+Panel B compares hospitalization rates across low, moderate and high baseline-risk categories.
+</desc>
+
+<!-- MAIN TITLE -->
+<text x="500" y="35" text-anchor="middle"
+      font-size="21" font-weight="700" fill="#203447">
+  Hospitalization Outcomes by Treatment Group
+</text>
+
+<text x="500" y="57" text-anchor="middle"
+      font-size="12" fill="#64748b">
+  Overall and baseline risk-stratified comparisons
+</text>
+
+<!-- LEGEND -->
+<rect x="365" y="78" width="13" height="13" rx="2" class="avx"/>
+<text x="385" y="89" font-size="12" fill="#334155">AVX-7</text>
+
+<rect x="490" y="78" width="13" height="13" rx="2" class="standard"/>
+<text x="510" y="89" font-size="12" fill="#334155">Standard care</text>
+
+<!-- PANEL A -->
+<text x="55" y="135" font-size="17" font-weight="700"
+      fill="#176B87">A</text>
+
+<text x="83" y="135" class="panel-title">
+  Overall hospitalization rate
+</text>
+
+<text x="83" y="155" class="panel-subtitle">
+  Entire study population
+</text>
+
+<!-- Panel A grid -->
+<line x1="260" y1="185" x2="260" y2="320" class="grid-line"/>
+<line x1="385" y1="185" x2="385" y2="320" class="grid-line"/>
+<line x1="510" y1="185" x2="510" y2="320" class="grid-line"/>
+<line x1="635" y1="185" x2="635" y2="320" class="grid-line"/>
+<line x1="760" y1="185" x2="760" y2="320" class="grid-line"/>
+
+<text x="260" y="177" text-anchor="middle" class="axis-label">0</text>
+<text x="385" y="177" text-anchor="middle" class="axis-label">10</text>
+<text x="510" y="177" text-anchor="middle" class="axis-label">20</text>
+<text x="635" y="177" text-anchor="middle" class="axis-label">30</text>
+<text x="760" y="177" text-anchor="middle" class="axis-label">40%</text>
+
+<text x="83" y="225" class="category-label">AVX-7</text>
+<rect x="260" y="205" width="386.25" height="27"
+      rx="3" class="avx"/>
+<text x="657" y="224" class="value-label">30.9%</text>
+
+<text x="83" y="285" class="category-label">Standard care</text>
+<rect x="260" y="265" width="196.25" height="27"
+      rx="3" class="standard"/>
+<text x="467" y="284" class="value-label">15.7%</text>
+
+<line x1="260" y1="320" x2="760" y2="320" class="axis-line"/>
+
+<text x="510" y="345" text-anchor="middle" class="axis-label">
+  Hospitalization rate (%)
+</text>
+
+<!-- PANEL DIVIDER -->
+<line x1="55" y1="375" x2="945" y2="375"
+      stroke="#dce3e8" stroke-width="1"/>
+
+<!-- PANEL B -->
+<text x="55" y="414" font-size="17" font-weight="700"
+      fill="#176B87">B</text>
+
+<text x="83" y="414" class="panel-title">
+  Risk-stratified hospitalization rate
+</text>
+
+<text x="83" y="434" class="panel-subtitle">
+  Comparison within each baseline-risk category
+</text>
+
+<!-- Panel B grid: 0-80% -->
+<line x1="260" y1="465" x2="260" y2="590" class="grid-line"/>
+<line x1="372.5" y1="465" x2="372.5" y2="590" class="grid-line"/>
+<line x1="485" y1="465" x2="485" y2="590" class="grid-line"/>
+<line x1="597.5" y1="465" x2="597.5" y2="590" class="grid-line"/>
+<line x1="710" y1="465" x2="710" y2="590" class="grid-line"/>
+<line x1="822.5" y1="465" x2="822.5" y2="590" class="grid-line"/>
+
+<text x="260" y="457" text-anchor="middle" class="axis-label">0</text>
+<text x="372.5" y="457" text-anchor="middle" class="axis-label">20</text>
+<text x="485" y="457" text-anchor="middle" class="axis-label">40</text>
+<text x="597.5" y="457" text-anchor="middle" class="axis-label">60</text>
+<text x="710" y="457" text-anchor="middle" class="axis-label">80</text>
+<text x="822.5" y="457" text-anchor="middle" class="axis-label">100%</text>
+
+<!-- LOW RISK -->
+<text x="83" y="496" class="category-label">Low risk</text>
+
+<line x1="274.63" y1="490" x2="311.19" y2="490"
+      class="connector"/>
+
+<circle cx="274.63" cy="490" r="7" class="avx"/>
+<circle cx="311.19" cy="490" r="7" class="standard"/>
+
+<text x="274.63" y="477" text-anchor="middle" class="value-label">2.6%</text>
+<text x="311.19" y="477" text-anchor="middle" class="value-label">9.1%</text>
+
+<!-- MODERATE RISK -->
+<text x="83" y="537" class="category-label">Moderate risk</text>
+
+<line x1="352.81" y1="531" x2="423.69" y2="531"
+      class="connector"/>
+
+<circle cx="352.81" cy="531" r="7" class="avx"/>
+<circle cx="423.69" cy="531" r="7" class="standard"/>
+
+<text x="352.81" y="518" text-anchor="middle" class="value-label">16.5%</text>
+<text x="423.69" y="518" text-anchor="middle" class="value-label">29.1%</text>
+
+<!-- HIGH RISK -->
+<text x="83" y="578" class="category-label">High risk</text>
+
+<line x1="548.19" y1="572" x2="645.63" y2="572"
+      class="connector"/>
+
+<circle cx="548.19" cy="572" r="7" class="avx"/>
+<circle cx="645.63" cy="572" r="7" class="standard"/>
+
+<text x="548.19" y="559" text-anchor="middle" class="value-label">51.3%</text>
+<text x="645.63" y="559" text-anchor="middle" class="value-label">68.6%</text>
+
+<line x1="260" y1="590" x2="822.5" y2="590" class="axis-line"/>
+
+<text x="541" y="616" text-anchor="middle" class="axis-label">
+  Hospitalization rate (%)
+</text>
+
+</svg>
+
+<figcaption id="novira-figure-caption">
+  <strong>Figure 1.</strong>
+  Overall and baseline risk-stratified hospitalization rates
+  according to treatment group. Panel A presents the crude
+  hospitalization rates in the entire study population.
+  Panel B presents the observed hospitalization rates within
+  low-, moderate-, and high-risk categories.
+  Values are expressed as percentages. The comparisons are
+  descriptive and do not establish a causal treatment effect.
+  Baseline differences and potential residual confounding
+  should be considered when interpreting these findings.
+</figcaption>
+
+</figure>
+
+
+
+
         <figcaption>Key study finding · Students will add their graph here</figcaption>
       </figure>
     </section>
